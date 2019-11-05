@@ -3,7 +3,7 @@ class recipe:
         error = []
         try:
             self.name = name
-            if not c_lvl in range(1, 5):
+            if not c_lvl in range(1, 6):
                 error.append("Cooking level is not between 1 and 5") 
             if not type(time) == int:
                 error.append("Wrong type for cooking time (expected int)")
@@ -20,7 +20,7 @@ class recipe:
             self.ingredients = ings
             self.description = desc
             self.recipe_type = r_type
-        except:
+        except TypeError:
             exit("Error in recipe parameter")
 
 
