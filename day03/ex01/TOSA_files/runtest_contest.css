@@ -1,0 +1,364 @@
+
+
+div.answers{
+	width: calc(100% - 722px);
+	height: calc(100vh - 212px);
+    min-width: 535px;
+}
+
+
+#local_echo_display{
+    display:none;
+    overflow:hidden;
+}
+p.session_lost{
+    padding-top:20px;
+    padding-bottom:20px;
+}
+
+input#last_code{
+    width:445px;
+    height:176px;
+    font-family:Inconsolata;
+}
+div.top_question {
+	height: auto;
+	text-align: center;
+	padding-left: 0;
+	min-height: 35px;
+    color: #454545;
+}
+
+
+/****************************************************************/
+/*  NEWS AREA													*/
+/****************************************************************/
+article#article_questiondisplayer div.server_result {
+   width: calc(100% - 741px);
+   clear:none;
+   margin: 0 0 0 10px;
+}
+
+div#news_container {
+	clear: none;
+	font-family: Open Sans;
+	height: 130px;
+	margin: 0 0 0 10px;
+	padding: 5px;
+	width: 520px;
+	background :#2D2D2D;
+	overflow: auto;
+    border: 1px solid #8E97B8;
+    max-height: 76vh;
+}
+
+div#news_container p{
+	width:100%;
+	color:#FFF;
+}
+
+section.runtest.bright div#news_container p{
+    color:#555;
+}
+
+div#news_container p.recent, section.runtest.bright div#news_container p.recent{
+	color:#E95F69;
+}
+/****************************************************************/
+/*  LEFT_BLOCK												*/
+/****************************************************************/
+
+div.left_block{
+    width: 190px;
+    float:left;
+	overflow:hidden;
+	padding:0;
+	border-right: white 3px solid;
+    background-color: #464d55;
+    color: white;
+    z-index: 10;
+	text-align: center;
+	font-size:16px;
+    min-height: 750px;
+	 height:500px;/* arbitrary small value*/
+
+}
+section.bright .left_block{
+    background: #FFF; 
+    color: black;
+}
+
+.left_block a{
+	cursor:pointer;
+}
+.left_block a.active{
+	cursor:pointer;
+    color: #999;
+}
+
+.left_block a:hover{
+	text-decoration: none;
+	color: #999;
+}
+
+.left_block i {
+   margin-top:70px;
+   margin-bottom:10px;
+   display:block;
+}
+
+#question{
+    width: 500px ;
+    background: none;
+}
+.contest_answer{
+    width: calc(100% - 720px);
+}
+#contest_helper{
+    position: absolute;
+    top: 0;
+    left: 190px;
+    z-index: 11;
+    background: #464d55;
+    color: white;
+    -webkit-box-shadow: 5px 3px 16px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 3px 16px -3px rgba(0,0,0,0.75);
+    box-shadow: 5px 3px 15px -5px rgba(0,0,0,0.75);
+    min-height: 750px;
+    
+}
+
+
+
+section.bright  #contest_helper{
+    background: white; 
+}
+section.bright  #contest_helper>* *{
+    color:#555;
+}
+ #contest_helper>* *{
+    color:white;
+    padding: 5px 15px 10px 15px !important;
+    font-size: 14px;
+   /* text-align: justify;*/
+    width: 100%;
+}
+#contest_helper div{
+    /*display: none;*/
+    padding-top: 50px
+}
+#contest_helper div.active{
+    width: 275px;
+    border-left-width: 1px;
+    height: calc(100vh - 57px);
+}
+section.bright  #contest_helper div.active{
+    border-left: #464d55;
+    border-left-style: solid;
+    border-left-width: 1px;
+}
+a.view_att, a.view_htm{
+    background:none;
+}
+#darklayer{
+    width: 100%;
+    z-index: 10;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+}
+
+
+.on#darklayer{
+    display: block;
+}
+
+/****************************************************************/
+/*      BATTLEDEV HEADER										*/
+/****************************************************************/
+header.code_question{
+    text-align: center;
+}
+header.code_question a.selected{
+	border: 1px solid #454545;
+}
+
+header.code_question a img{
+	max-height: 25px;
+	top:0;
+}
+
+header.code_question a img:hover{
+	filter : brightness(80%);
+}
+
+
+header.code_question div.subject_container a {
+	padding: 2px 3px;
+	display: inline-block;
+	margin-right: 10px;
+	position:relative;
+	top:3px;
+    cursor : pointer;
+}
+
+header.code_question div.subject_container p {
+    color: #454545;
+    font-weight: bold;
+    top: -5px;
+}
+
+header.code_question div.subject_container {
+	float: none;
+	display: inline-block;
+}
+
+header a.copy_button{
+	margin-top: 9px;
+
+}
+
+
+
+header.code_question div p, header.code_question p {
+    font-size:16px;
+    text-transform: uppercase;
+    font-weight: 400;
+  	padding: 0;
+	margin:0;
+	float: none;
+	display: inline;
+	position: relative;
+	top: -8px;
+}
+
+    
+
+header.code_question div.isograd_logo {
+    float: right;
+    clear: none;
+    padding-top: 8px;
+}
+
+header.code_question div.isograd_logo > p{
+    float: left; 
+    margin-right: 15px;
+    font-size: 12pt;
+    padding-top: 8px;
+    font-weight: bold;
+}
+header.code_question p.que_tit{
+    font-weight: bold;
+    padding: 8px 0px 0;
+    padding-right: 10px;
+    padding-left: 30px;  
+}
+header.code_question p.que_num{
+   float: left;
+top: 8px;
+}
+
+header.code_question p.rank {
+	top: 0px;
+	margin-left: 11px;
+}
+
+header.code_question.battledev p.battledev_que_tit,header.code_question.battledev p.que_num{
+    float: left;
+    top: 11px;
+    margin-left: 11px
+}
+header.code_question.battledev div.center_container{
+   top: 11px
+}
+header.code_question.battledev div p, header.code_question p{
+    top:auto;
+    margin-left: 10px
+}
+header.code_question.battledev div.isograd_logo{
+    padding-top: 3px;
+}
+header.code_question.battledev div.isograd_logo > p{
+    text-transform: none;
+    font-size: 16px
+}
+header.code_question.battledev > p.battledev_que_tit,header.code_question.battledev #globaltimer{
+    font-weight: bold;
+}
+header.code_question  p.str_id{
+    float: right;
+    font-size: 14px;
+    margin: 0 0 0 10px;
+    padding: 2px 0 0 0;
+    top: 8px;
+}
+/****************************************************************/
+/*  GLOBAL TIMER												*/
+/****************************************************************/
+
+header.code_question div.center_container{
+     float:none;
+     display:inline-block;
+     top:8px;
+ }
+
+ header.code_question div.center_container p.global_timer_container {
+     top:0;
+	}
+
+div#question p.global_timer_container.timeovermessage{
+    color:#D9696C;
+	padding:10px 0px;
+}
+
+
+.contest.global_timer_container>span{
+    color: #E95F69;
+    font-weight: bold;
+}
+
+#contest_helper>div{
+    padding-left: 10px
+}
+.hint_notification::after {
+    position: absolute;
+    content: "1";
+    padding: 10px 14px;
+    border-radius: 26px;
+    line-height: 1;
+    color: white;
+    background: #e95f69;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-top: -10px;
+    font-size: 14px;
+}
+
+#top_que_txt{
+	text-transform:uppercase;
+}
+
+#top_que_txt img{
+    float: right;
+    height: 22px;
+    margin: -10px 3px 0;
+    border-radius: 5px;
+}
+
+#helptext h2{
+	text-transform:uppercase;
+	font-size:15px;
+}
+div.battledev_head_center{
+    display: inline;
+    clear:none;
+    text-align: center;
+    width: calc(100% - 830px);
+    padding-top: 8px;  
+}
+
+
+#samplefiles>a.view_att{
+    color:#7086b7;
+}

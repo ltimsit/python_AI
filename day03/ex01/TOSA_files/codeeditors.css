@@ -1,0 +1,135 @@
+div.code div,pre.noneditable_code div {
+	float:none;
+}
+
+pre.noneditable_code,pre.code_input{
+	top:0;
+	left:0;
+	margin:0;
+	position: absolute;
+}
+
+pre.noneditable_code {
+	height: 460px;
+	border: 1px solid #ccc;
+	margin: 0;
+	width: 700px;
+}
+
+pre.code_input{
+	bottom: 0;
+    right: 0;
+	border:none;
+    border-radius: 0;
+    width:100%;
+	height:100%;
+	padding:0;
+}
+
+div.code, div.noneditable_code_container{
+    height: 500px;
+    margin: 0;
+    width: 100%;
+    box-shadow:none;
+    display:none;
+}
+
+div.code{
+	height: 100%;
+}
+
+div.noneditable_code_container{
+	border:none;
+}
+
+
+div.ace_layer div.ace_line{
+	clear:left;
+	float:none;
+}
+
+/*********************************************************/
+/* RESIZE AREA													*/
+/*********************************************************/
+div#code_resize_container {
+    background: transparent url("../images/runtest/buttons/resize_vertical.png") no-repeat scroll 50% 100%;
+    padding: 0 0 10px;
+    width: 100%;
+}
+
+div#code_resize_container{
+	height:400px;
+}
+
+div#code_resize_container{
+	margin-bottom: 0px;
+}
+
+div#code_resize_container{
+	padding:0 0 30px 0px;
+	background: url("../images/buttons/resize_vertical.png") no-repeat scroll 50% 100% transparent;
+	width:100%;
+}
+
+div#resize_container{
+	border-left: 1px solid #d6dde5;
+	width:77%;
+	height: 220px;
+	padding-top:5px;
+	height:300px;
+	overflow-y: hidden;
+}
+
+.ui-resizable-handle{
+    width:100%;
+    height:35px;
+    border-top: 1px solid #d6dde5;
+}
+
+/*********************************************************/
+/* TABS													*/
+/*********************************************************/
+
+p.onglet{
+	font-size:13px;
+	background-color:#464D55;
+	float:left;
+	padding:4px 40px;
+	margin: 0 3px 0 0;
+	border-radius : 4px 4px 0px 0px;
+	border:1px solid #8E97B8;
+	text-transform: uppercase;
+    top:2px;
+    position:relative;
+	
+}
+
+p.onglet.selected {
+    background-color:#303338;
+	border-bottom: none;
+    z-index: 80;
+}
+
+p.onglet a{
+	color: #EEE;
+	text-decoration:none;
+}
+
+p.onglet a:hover{
+	text-decoration: underline;
+}
+
+/* Bright Theme */
+.bright p.onglet {
+    background-color:#EEE;
+    border:1px solid #d6dde5;
+}
+.bright p.onglet.selected {
+    background-color:#FFF;
+    border-bottom: none;
+}
+
+.bright p.onglet a{
+    color: #333;
+    text-decoration:none;
+}
